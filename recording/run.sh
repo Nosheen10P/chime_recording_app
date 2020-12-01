@@ -47,7 +47,7 @@ user_pref("media.gmp-gmpopenh264.version", "1.8.1.1");
 user_pref("doh-rollout.doorhanger-shown", true);
 EOF
 # login user to application
-curl -k --cookie-jar cookies.txt --form password=wore-handful-pirate --form username=admin1@apdscorporate.com https://localhost:8443/login;
+curl -k --cookie-jar cookies.txt --form password=wore-handful-pirate --form username=admin1@apdscorporate.com https://apdspoc.pt-staging.com:8443/login;
 # extract session id from cookies.txt file
 SESSION_ID=$(tail -1 cookies.txt | awk -F' ' '{print $NF}')
 
